@@ -47,10 +47,6 @@ exports.create = async (req, res) => {
 };
 
 /* 기존 Todo 수정 */
-// (배점 1점) 존재하는 Todo ID 로 수정하는 경우, Todo가 잘 수정되는가?
-// Todo 는 title, done 두 속성에 대해 수정 가능합니다.
-// 두 속성 중 하나라도 수정되었다면 updatedAt 컬럼 값이 변경됩니다.
-// (배점 0.5점) 존재하지 않는 Todo ID 로 삭제하는 경우, 에러 메세지가 잘 응답되는가?
 exports.update = async (req, res) => {
   try {
     const { id } = req.params;
