@@ -1,0 +1,48 @@
+/* 가상 클래스 선택자 root의 색상들은 필수 사용요소가 아닙니다.
+색상은 자유롭게 구성해주세요. */
+:root {
+  --main-color: #04c82f;
+  --main-bg-color: #e5ffeb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #e5ffeb;
+}
+
+header {
+  background-color: #04c82f;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#todo-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+#todo-id {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-box {
+  margin: 20px;
+  width: 200px;
+  height: 20px;
+}
+/* 4단으로 Todo 목록이 보여져야 합니다.
+(배점 0.5점) 헤더, 입력창, Todo 목록을 포함하는 요소의 최대 너비는 800px 입니다. */
+@media screen and (max-width: 960px) {
+  /* 때에는 2단으로 Todo 목록이 보여져야 합니다. */
+}
+
+@media screen and (max-width: 540px) {
+  /*  1단으로 Todo 목록이 보여져야 합니다. */
+  /* 헤더의 로고 이미지와 제목(Todo List)이 가로에서 세로 방향으로 배치가 변경됩니다. */
+}
