@@ -80,7 +80,7 @@ exports.delete = async (req, res) => {
     });
 
     if (Boolean(deleteTodo)) {
-      res.send({ message: "Todo not found", deletedId: id });
+      res.send({ message: "Todo deleted successfully", deletedId: id });
     } else res.send({ message: "Todo not found" });
   } catch (err) {
     console.log("err", err);
